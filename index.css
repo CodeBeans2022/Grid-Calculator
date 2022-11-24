@@ -1,0 +1,103 @@
+body {
+
+    background-color: mediumpurple;
+
+}
+
+.container {
+
+    width: 35%;
+    border: 1px solid black;
+    padding: 25px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: mediumorchid;
+    box-shadow: 10px 10px 10px 10px black;
+    font-size: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+}
+
+#output {
+
+    height: 150px;
+    background-color: rgb(227, 160, 225);
+    margin-bottom: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    grid-column: 1 / -1;
+}
+
+
+.userInput {
+
+    height: 30px;
+    margin-bottom: 10px;
+    margin: 10px;
+
+}
+
+#clear {
+
+    margin-top: 15px;
+    height: 30px;
+    grid-column: span 2;
+    margin: 10px;
+
+}
+
+
+button {
+
+    border-radius: 40%;
+    background-color: lightgray;
+
+}
+
+button:hover {
+    background-color: blueviolet;
+}
+
+@media screen and (max-width: 576px) {
+
+    .userInput {
+
+        width: 50px;
+
+    }
+
+    .container {
+
+        width: 75%;
+        padding: 5%;
+
+
+    }
+
+}
+
+@media screen and (max-width: 540px) {
+
+    .userInput {
+
+        width: 49px;
+
+    }
+}
+
+@media screen and (max-width: 488px) {
+
+    .userInput {
+
+        width: 48px;
+
+    }
+
+    .container {
+
+        width: 100%;
+
+
+    }
+
+}
