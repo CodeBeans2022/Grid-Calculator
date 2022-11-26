@@ -7,13 +7,8 @@
 }
 body{
 
-background-image: url(/Background.png);
-background-size: cover;
-height: 100vh;
-box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-font-family:monospace;
-font-size: 20px;
-
+background-image: linear-gradient(rgb(140, 30, 134),black);
+height: 100vh ;
 
 }
 
@@ -32,7 +27,9 @@ padding: 50px;
 width: 350px;
 border: 3px solid black ;
 border-radius: 30px;
-box-shadow: 0px 0px 10px 10px rgb(49, 4, 47);
+box-shadow: 0px 0px 10px 10px rgb(0, 0, 0);
+background-image: url(/Background.png);
+background-size: cover;
 
 }
 
@@ -45,7 +42,7 @@ border-radius: 10px;
 min-height: 100px;
 height: fit-content;
 padding: 10px;
-background-color: rgb(54, 17, 52);
+background-color: rgb(140, 30, 134);
 color: rgb(209, 40, 215);
 word-break: break-word;
 
@@ -84,6 +81,6 @@ border-radius: 40px;
 
 button:hover{
 
-    background-color: rgb(146, 30, 142);
+    background-color: rgb(140, 30, 134);
 
 }
