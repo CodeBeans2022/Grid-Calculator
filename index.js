@@ -3,8 +3,9 @@ let decimalCheck = []
 
 function addToSum(operator) {
     switch(operator){
-        case `,` :
-        if(decimalCheck.includes(`,`)){
+
+        case `.` :
+        if(decimalCheck.includes(`.`)){
             document.getElementById('output').innerText = document.getElementById('output').innerText
         } 
         else{
@@ -17,20 +18,40 @@ function addToSum(operator) {
         case `-`:
         case `*`:
         case `/`:
+          if(!document.getElementById('output').innerText.endsWith(operator)){
             sum = sum + operator;
             document.getElementById("output").innerText = sum;
             decimalCheck = []
-        break;
+          }
+          // if(document.getElementById('output').innerText.endsWith(`+`)){
+          //   document.getElementById('output').innerText = document.getElementById('output').innerText
+          // }
+          // else{
+          //   sum += operator
+          //   document.getElementById('output').innerText = sum
+          //   symbolCheck.push(operator)
+          // }
+          break; 
+        // case `-`:
+        // case `*`:
+        // case `/`:
+        //     sum = sum + operator;
+        //     document.getElementById("output").innerText = sum;
+        //     decimalCheck = []
+
+        // break;
+
         default:
             sum = sum + operator;
             document.getElementById("output").innerText = sum;
             decimalCheck.push(operator)
-            operatorCheck.push(operator)
+            console.log((document.getElementById('output').innerText))
+
     }
 }
 
 function evaluateSum() {
-  document.getElementById("output").innerText = eval(sum);
+  document.getElementById("output").innerText = eval(document.getElementById('output').innerText).toFixed(2);
 }
 
 function clearSum() {
