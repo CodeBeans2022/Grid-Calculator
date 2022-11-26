@@ -5,6 +5,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+/* I have stuck to the three color rule */
+
 body{
 
 background-image: linear-gradient(rgb(121, 41, 117),black);
@@ -71,6 +75,7 @@ height: 60px;
 width: 60px;
 font-size: 20px;
 font-weight: 700;
+background-color: antiquewhite ;
 
 }
 
