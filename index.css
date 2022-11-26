@@ -4,8 +4,9 @@ background-image: url(/Background.png);
 background-size: cover;
 height: 100vh;
 box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
-font-family: fantasy;
+font-family:monospace;
 font-size: 25px;
+
 
 }
 
