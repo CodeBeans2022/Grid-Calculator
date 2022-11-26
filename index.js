@@ -45,7 +45,6 @@ function addToSum(operator) {
             sum = sum + operator;
             document.getElementById("output").innerText = sum;
             decimalCheck.push(operator)
-            console.log((document.getElementById('output').innerText))
 
     }
 }
@@ -61,9 +60,9 @@ function clearSum() {
 }
 
 function backspace() {
-  // sum = sum.slice(0, -1);
-  // document.getElementById("output").innerText = sum;
+  sum = sum.slice(0, -1); 
   document.getElementById('output').innerText = document.getElementById('output').innerText.slice(0,-1)
+  document.getElementById("output").innerText = sum;
   decimalCheck.pop()
 }
 
